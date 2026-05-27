@@ -94,7 +94,7 @@ body{
 
 .hero-img {
   flex: 1;
-  background: #f1f2f3;
+  background: white;
 
   display: flex;
   align-items: center;

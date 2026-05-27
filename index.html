@@ -19,21 +19,19 @@
         <section class="hero">
 
             <div class="hero-img">
-                <img src="recursos/server3.svg" alt="Ilustración">
+                <img src="recursos/capasmodelo.png" alt="Ilustración">
             </div>
 
             <div class="hero-texto">
                 <span class="subtitulo">Redes y Comunicaciones</span>
 
-                <h1>Arquiterctura y modelos de redes</h1>
+                <h1>Capa de enlace y acceso al medio</h1>
 
                 <p class="descripcion">
-                 La arquitectura y modelos de redes definen cómo se organiza la comunicación entre dispositivos, utilizando capas, protocolos y reglas que permiten el intercambio de información.
-                 
-                </p>
-
-                <p class="frase">
-                    “vvvvvvvvvvvvvvvvvvvvvvvvvv.”
+                    La capa de enlace de datos se encarga de transferir información entre dispositivos que pertenecen a
+                    la misma red.
+                    Su función es garantizar que los datos puedan pasar correctamente de un nodo a otro a través del
+                    medio de conexión utilizado.
                 </p>
             </div>
 
@@ -47,71 +45,111 @@
                 <div class="features__grid">
 
                     <div class="feature">
-                        <h3>MODELOS DE RED</h3>
+                        <h3>Funciones principales de la capa de enlace de datos</h3>
+                        <ul class="bloque__lista">
+
+                            <li>
+                                <strong>Direccionamiento físico</strong>
+                                <p>Identifica los dispositivos mediante direcciones MAC.</p>
+                            </li>
+
+                            <li>
+                                <strong>Encapsulamiento</strong>
+                                <p>Organiza la información en tramas para poder transmitirla.</p>
+                            </li>
+
+                            <li>
+                                <strong>Control de acceso</strong>
+                                <p>Define cuándo un dispositivo puede usar el medio de transmisión.</p>
+                            </li>
+
+                            <li>
+                                <strong>Detección de errores</strong>
+                                <p>Verifica si los datos llegaron correctamente.</p>
+                            </li>
+
+                        </ul>
                         <p>
-                            Son marcos conceptuales o estánadr que desccriben como viaja y se organiza la información.
-                            Estos modelos explican como se comunican los datos entre los dispositivos, utilizando capaz, protocolos y reglas.
-                            Las topologías de red define la estructura de conexión, mientras que el modelo de red define cómo funciona la comunicación sobre esa estructura.
+                            En esta capa trabajan elementos como switches y direcciones MAC,
+                            fundamentales para la comunicación dentro de una red local.
                         </p>
                     </div>
 
                     <div class="feature">
-                        <h3>JERARQUÍA DE PROTOCOLOS</h3>
+                        <h3>Subcapas de enlace de datos</h3>
 
                         <p>
-                            Los protocolos son un conjunto de normas para formatos de mensajes y procedimientos que permiten a las maquinas y los programas de aplicación intercambiar información.
-                            La jeraquía de protocolos es una combianación de protocolos. Cada nievel de la jerarquía especifica un protocolo diferente para la gestión de una función de un sistema del proceso de comunicación.
-                            Cada nivel tiene su propio conjunto de reglas y los protocolos definen las reglas para para cada modelo de red.
+                            La capa de enlace de datos se divide en dos subcapas que trabajan juntas
+                            para permitir la comunicación entre dispositivos dentro de una red local.
                         </p>
-                        
+
+                        <ul class="bloque__lista">
+
+                            <li>
+                                <strong>LLC (Logical Link Control)</strong>
+                                <p>
+                                    Se encarga de la comunicación lógica con la capa de red y ayuda
+                                    a organizar el flujo de información entre los dispositivos.
+                                </p>
+                            </li>
+
+                            <li>
+                                <strong>MAC (Media Access Control)</strong>
+                                <p>
+                                    Controla el acceso al medio físico y utiliza direcciones MAC
+                                    para identificar cada dispositivo dentro de la red.
+                                </p>
+                            </li>
+
+                        </ul>
+
+                        <p>
+                            Ambas subcapas permiten que los datos viajen de forma ordenada y correcta
+                            dentro de una red local.
+                        </p>
+
 
                     </div>
 
                     <div class="feature">
-                        <h3>DISEÑO DE CAPAS</h3>
+                        <h3>NIC - Tarjeta de red</h3>
                         <p>
-                        
-                        </p>
-                    </div>
-
-                    <div class="feature">
-                        <h3>PRIMITIVAS DE SERVICIOS</h3>
-
-                        <p>
-                           
+                            La NIC (Network Interface Card) o tarjeta de red es el componente que permite
+                            conectar un dispositivo a una red, ya sea por cable o de forma inalámbrica.
                         </p>
 
-                    </div>
+                        <ul class="bloque__lista">
 
-                    <div class="feature">
-                        <h3>SERVICIOS Y PROTOCOLOS</h3>
+                            <li>
+                                <strong>Conexión física</strong>
+                                <p>
+                                    Actúa como el enlace entre el dispositivo y el medio de transmisión.
+                                </p>
+                            </li>
+
+                            <li>
+                                <strong>Dirección MAC</strong>
+                                <p>
+                                    Cada tarjeta posee una dirección física única que identifica al dispositivo dentro
+                                    de la red.
+                                </p>
+                            </li>
+
+                            <li>
+                                <strong>Transmisión de datos</strong>
+                                <p>
+                                    Convierte la información digital en señales que pueden viajar por cables, fibra
+                                    óptica o Wi-Fi.
+                                </p>
+                            </li>
+
+                        </ul>
 
                         <p>
-                      
+                            La NIC es fundamental para que un dispositivo pueda enviar y recibir información dentro de
+                            una red.
                         </p>
-
                     </div>
-
-                    <div class="feature">
-                        <h3>MODELO OSI</h3>
-
-                        <p>
-                         
-                        </p>
-                             <img src="recursos/capasmodelo.png" alt="">
-                    </div>
-
-                    <div class="feature">
-                        <h3>MODELO TCP/IP</h3>
-
-                        <p>
-
-                        </p>
-
-                    </div>
-                </div>
-            </div>
-
         </section>
 
 
@@ -121,25 +159,18 @@
 
                 <div class="bloque__contenido">
 
-                    <h2 class="bloque__titulo">
-                        COMPARATIVIA DE MODELOS
-                    </h2>
+                    <h2 class="bloque__titulo">Conclusión</h2>
 
                     <p>
-                        
+                        Las redes y las comunicaciones forman parte de nuestra vida cotidiana.
+                        Cada mensaje, búsqueda o archivo que enviamos depende de dispositivos,
+                        protocolos y modelos que permiten que la información viaje de un lugar a otro.
                     </p>
 
-                    <ul class="bloque__lista">
-                        <li>
-                        </li>
-
-                        <li>
-                        </li>
-
-                    </ul>
-
                     <p>
-                       
+                        Comprender cómo funcionan las conexiones, las capas de comunicación y los
+                        distintos tipos de redes nos ayuda a entender mejor el mundo digital
+                        en el que vivimos y utilizamos todos los días.
                     </p>
 
                 </div>
